@@ -1,6 +1,3 @@
-###################################################################################
-##### COMBINE SHADE-INTOLERANT PFTS WITH SHADE-TOLERANT PFTS FOR FINDING DOMINANT PFT
-##### AND DOING BIOME CLASSIFICATIONS ETC
 #'
 #' Combine shade-intolerant PFTs with their shade-tolerant cousins
 #'
