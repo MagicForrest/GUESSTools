@@ -1,17 +1,19 @@
 Package: GUESSTools
 Type: Package
 Title: R Tools for LPJ-GUESS
-Version: v0.1.0
+Version: 0.1.1
 Date: 2018-04-18
-Authors@R: c(person("Matthew", "Forrest", role=c("aut", "cre"), email="matthew.forrest@senckenberg.de")
-Author: Matthew Forrest [aut, cre], 
-Maintainer: Matthew Forrest (matthew.forrest@senckenberg.de)
-Description: Simple little package of helpful utilities for processing data coming in and out of LPJ-GUESS.  
-It is somewhat complementary to the DGVMTools package, upon which it depends.
-License: What license is it under?
+Authors@R: c(person("Matthew", "Forrest", role=c("aut", "cre"), email="matthew.forrest@senckenberg.de"))
+Author: Matthew Forrest [aut, cre] 
+Maintainer: Matthew Forrest <matthew.forrest@senckenberg.de>
+Description: Simple little package of helpful utilities for processing data coming in and out of LPJ-GUESS.  It is somewhat complementary to the DGVMTools package, upon which it depends.
+License: GPL | file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
     R (>= 2.15.0),
     data.table (>= 1.9.6),
     DGVMTools
+BugReports: https://github.com/MagicForrest/GUESSTools/issues
+NeedsCompilation: no
+RoxygenNote: 6.0.1
