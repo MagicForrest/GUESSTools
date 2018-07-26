@@ -1,4 +1,18 @@
+#' Reads LPJ-GUESS half-degree gridlist
+#'
+#' Returns (as a data.frame) the standard 59,191 0.5 degree gridcell for a global LPJ-GUESS run as a data.frame.
+#'
+#'
+#' @param type A character specifying "coords" which gives the longitudes and latitides as coordinates,
+#' "index" which gives the indices of the gridcells (compatible with the 'cf' input model)
+#' or "both" which return both the coordinates indices
+#' @param SW.corner A logical, if TRUE specify gridcells by the the south-west corner (useful for old LPJ-GUESS versions)
+#'
+#' @return A data.frame with all the standard global gridcells
+#'
+#' @author Matthew Forrest \email{matthew.forrest@@senckenberg.de}
 #' @export
+
 getHDGridlist <- function(type = "coords", SW.corner = FALSE) {
 
   # read the file

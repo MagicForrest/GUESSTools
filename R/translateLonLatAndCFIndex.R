@@ -18,18 +18,18 @@ translateLonLatAndCFIndex <- function(lon.lat = NULL, cf.index = NULL, lon.res =
 
   # ERROR - both arguements empty
   if(is.null(lon.lat) && is.null(cf.index)){
-    stop("function convertlon.latAndcf.index():  You must provide either lon.lat or cf.index.")
+    stop("You must provide either lon.lat or cf.index.")
   }
   # ERROR - both arguements specified
   else  if(!is.null(lon.lat) && !is.null(cf.index)){
-    stop("function convertlon.latAndcf.index():  You must provide only on of lon.lat or cf.index.")
+    stop("You must provide only one of lon.lat or cf.index.")
   }
   # CASE 1 - got lat-lon, return cf index
   else if(!is.null(lon.lat)){
 
     # make sure it is a data.frame and check it has more than one column
     lon.lat.df <- as.data.frame(lon.lat)
-    if(ncol(lon.lat.df) < 2) {   stop("function convertlon.latAndcf.index(): Input data doesn't look right, not enough columns maybe?")}
+    if(ncol(lon.lat.df) < 2) {   stop("Input data doesn't look right, not enough columns maybe?")}
 
     # assume first column is longitude
     lons <- lon.lat.df[,1]
@@ -51,7 +51,7 @@ translateLonLatAndCFIndex <- function(lon.lat = NULL, cf.index = NULL, lon.res =
 
     # make sure it is a data.frame and check it has more than one column
     lon.lat.df <- as.data.frame(cf.index)
-    if(ncol(lon.lat.df) < 2) {   stop("function convertlon.latAndcf.index(): Input data doesn't look right, not enough columns maybe?")}
+    if(ncol(lon.lat.df) < 2) {   stop("Input data doesn't look right, not enough columns maybe?")}
 
     # assume first column is longitude
     lons.cf.index <- lon.lat.df[,1]
