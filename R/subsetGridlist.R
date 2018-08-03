@@ -26,7 +26,6 @@ subsetGridlist <- function(gridlist, area, file.name, header = TRUE, offset = c(
     gridlist <- utils::read.table(gridlist, header = header)
     names(gridlist)[1:2]  <- c("Lon", "Lat")
   }
-  print(utils::head(gridlist))
 
   # get extent
   subset.extent <- extent(area)
