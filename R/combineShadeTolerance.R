@@ -9,11 +9,12 @@
 #' @param verbose Logical, if TRUE print some progress updates
 #' @return Not necessary anything since the Field is modified in place, but it does return Field anyways
 #' @author Matthew Forrest \email{matthew.forrest@@senckenberg.de}
+#' @import DGVMTools
 #' @export
 combineShadeTolerance <- function(x, verbose = FALSE){
 
   # get the names of the PFTs present
-  PFTs.present <- listPFTs(x)
+  PFTs.present <- whichLayers(x, criteria = "PFT")
 
   # combination pairs
   pairs <- list(

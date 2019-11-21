@@ -11,6 +11,7 @@
 #' @return A data.frame with all the standard global gridcells
 #'
 #' @author Matthew Forrest \email{matthew.forrest@@senckenberg.de}
+#' @importFrom utils read.table
 #' @export
 
 getHDGridlist <- function(type = "coords", SW.corner = FALSE) {

@@ -4,7 +4,8 @@
 \alias{subsetGridlist}
 \title{Select a subset of a gridlist}
 \usage{
-subsetGridlist(gridlist, area, file.name, header = TRUE, offset = c(0, 0))
+subsetGridlist(gridlist, area, file.name, header = TRUE, offset = c(0,
+  0))
 }
 \arguments{
 \item{gridlist}{A character string giving the location of the original gridlist which will be read by read.table and the first two columns will be

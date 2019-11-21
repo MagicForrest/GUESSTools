@@ -1,11 +1,47 @@
-####################### LON-LAT TO CF INDEX #################################################################################
-#' Returns
+#!/usr/bin/Rscript
+
+######################### LON-LAT TO CF INDEX ##############################
+#' @title Convert lon,lat to indices and vice versa
 #'
+#' @description Handy function to convert gridlists with longitudes and latitudes to coordinate indices, (compatible the 'cf' input module in LPJ-GUESS),
+#' and vice versa.  Only works for regular grids.
 #'
+#' @param lon.lat A data.frame (or data.table) with two columns, one for lon and one for lat (in that order)
+#' @param cf.index  Alternatively to the above a data.frame (or data.table) with two columns it the lon and lat indices
+#' @param lon.res,lat.res the longitudinal and latitudinal resolutions
+#' @param lon.start,lat.start The coordinates of the south west corner of the domain (ie. where to start the indexing from)
+#' @param southwest A logical, set to TRUE if the lons and lats describe the southwest corner of the gridcell (as is the case for old LPJ-GUESS gridlists),
 #'
+#' @details Note, this gives and uses indices starting with '0', which I am pretty sure in what the cf module uses.
 #'
+#' @return The new gridlist as a data.frame
+#'
+#' @author Matthew Forrest \email{matthew.forrest@@senckenberg.de}
+#' @import data.table
 #' @export
+#' @examples
 #'
+#' ### examples for four corners and (0,0)/(0.25,0.25) of a global domain on a 0.5 degree grid
+#'
+#' ### from lon,lat to index
+#'
+#' # gridcell centres
+#' translateLonLatAndCFIndex(lon.lat = data.frame(Lon = c(-179.75, -179.75, 179.75, 179.75, 0.25),
+#'                                                Lat = c(-89.75, 89.75,-89.75, 89.75, 0.25)))
+#' # southwest corner
+#' translateLonLatAndCFIndex(lon.lat = data.frame(Lon = c(-180, -180, 179.5, 179.5, 0),
+#'                                                Lat = c(-90, 89.5, -90, 89.5, 0)), southwest = TRUE)
+#'
+#'
+#' ### from indices to lon,lat
+#'
+#' # gridcell centres
+#' translateLonLatAndCFIndex(cf.index = data.frame(Lon = c(0, 0, 719, 719, 360),
+#'                                                 Lat = c(0, 359, 359, 0, 180)))
+#' # southwest corner
+#' translateLonLatAndCFIndex(cf.index = data.frame(Lon = c(0, 0, 719, 719, 360),
+#'                                                 Lat = c(0, 359, 359, 0, 180)), southwest = TRUE)
+
 
 translateLonLatAndCFIndex <- function(lon.lat = NULL, cf.index = NULL, lon.res = 0.5, lat.res = 0.5, lon.start = -180, lat.start = -90, southwest = FALSE){
 

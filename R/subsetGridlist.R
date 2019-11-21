@@ -19,6 +19,7 @@
 #' @export
 #' @importClassesFrom raster Extent
 #' @importMethodsFrom raster extent
+#' @importFrom utils read.table
 subsetGridlist <- function(gridlist, area, file.name, header = TRUE, offset = c(0.0, 0.0)){
 
   # if necessary read in and check gridlist
