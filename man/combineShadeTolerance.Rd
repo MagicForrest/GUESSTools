@@ -2,7 +2,7 @@
 % Please edit documentation in R/combineShadeTolerance.R
 \name{combineShadeTolerance}
 \alias{combineShadeTolerance}
-\title{Combine shade-intolerant PFTs with their shade-tolerant cousions}
+\title{Combine shade-intolerant PFTs with their shade-tolerant cousins}
 \usage{
 combineShadeTolerance(input, verbose = FALSE)
 }
@@ -15,7 +15,7 @@ combineShadeTolerance(input, verbose = FALSE)
 Not necessary anything since the Field is modified, but it does return Field with the data for the shade-intolerant PFTs set to zero but their values added to the shade-tolerant versions
 }
 \description{
-The effects of this depend on the shade-tolerant cousin PFTs being defined in the PFT list.  Note that this function modifies the original Field in place, 
+The effects of this depend on the shade-tolerant cousin PFTs being defined in the PFT list.  Note that this function modifies the original Field in place,
 so make a copy of the Field first if you want to keep the old one.  Also it means that it doesn't need to be re-asigned with the "<-" syntax, you can actually just call the function.
 }
 \author{

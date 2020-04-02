@@ -7,302 +7,292 @@
 
 
 #' @title dummy text
-#' 
+#'
 #' @description
-#' 
+#'
 #' @details LPJ-GUESS European PFTs
-#' 
+#'
 #' @format A list of \code{PFT} objects that store meta-data for standard PFT for supported models
 #' @rdname PFT-class
 #' @keywords datasets
 lpj.euro.PFTs <- list(
-  
+
   # BOREAL TREES
-  
-  Abi_alb = new("PFT",
+
+  Abi_alb = new("Layer",
                 id = "Abi_alb",
                 name = "Abies alba",
-                lifeform = "Tree",
-                leafform = "Needleleaved",
-                phenology = "Evergreen",
-                zone = "Temperate",
                 colour = "blue",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Needleleaved",
+                                  phenology = "Evergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  BES = new("PFT",
+
+  BES = new("Layer",
             id = "BES",
             name = "Boreal Evergreen Shrub",
-            lifeform = "Shrub",
-            leafform = "Unspecified_Leafform",
-            phenology = "Evergreen",
-            zone = "Boreal",
             colour = "cyan",
-            combine = "None"
+            properties = list(type = "PFT",
+                              lifeform = "Shrub",
+                              leafform = "Unspecified_Leafform",
+                              phenology = "Evergreen",
+                              zone = "Boreal",
+                              combine = "None")
   ),
-  
-  "Bet_pen" = new("PFT",
+
+  "Bet_pen" = new("Layer",
                   id = "Bet_pen",
                   name = "Betula pendula",
-                  lifeform = "Tree",
-                  leafform = "Broadleaved",
-                  phenology = "Summergreen",
-                  zone = "Temperate",
-                  colour = "darkcyan",
-                  combine = "None"
+                  properties = list(type = "PFT",
+                                    lifeform = "Tree",
+                                    leafform = "Broadleaved",
+                                    phenology = "Summergreen",
+                                    zone = "Temperate",
+                                    colour = "darkcyan",
+                                    combine = "None")
   ),
-  
-  Bet_pub = new("PFT",
+
+  Bet_pub = new("Layer",
                 id = "Bet_pub",
                 name = "Betula pubescens",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Boreal",
                 colour = "lightskyblue1",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Boreal",
+                                  combine = "None")
   ),
-  
-  Car_bet = new("PFT",
+
+  Car_bet = new("Layer",
                 id = "Car_bet",
                 name = "Carpinus Betula",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "peru",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  Cor_ave = new("PFT",
+
+  Cor_ave = new("Layer",
                 id = "Cor_ave",
                 name = "Corylus avellana",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "saddlebrown",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  Fag_syl = new("PFT",
+
+  Fag_syl = new("Layer",
                 id = "Fag_syl",
                 name = "Fagus Sylvatica",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "darkgreen",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  Fra_exc = new("PFT",
+
+  Fra_exc = new("Layer",
                 id = "Fra_exc",
                 name = "Fraxinus excelsior",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "darkgray",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  Jun_oxy = new("PFT",
+
+  Jun_oxy = new("Layer",
                 id = "Jun_oxy",
                 name = "Juniperus oxycedrus",
-                lifeform = "Shrub",
-                leafform = "Needleleaved",
-                phenology = "Evergreen",
-                zone = "Mediterranean",
                 colour = "darkseagreen4",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Shrub",
+                                  leafform = "Needleleaved",
+                                  phenology = "Evergreen",
+                                  zone = "Mediterranean",
+                                  combine = "None")
   ),
-  
-  MRS = new("PFT",
+
+  MRS = new("Layer",
             id = "MRS",
             name = "Mediterranean Raingreen Shrub",
-            lifeform = "Shrub",
-            leafform = "Unspecified_Leafform",
-            phenology = "Raingreen",
-            zone = "Mediterranean",
             colour = "pink",
-            combine = "None"
+            properties = list(type = "PFT",
+                              lifeform = "Shrub",
+                              leafform = "Unspecified_Leafform",
+                              phenology = "Raingreen",
+                              zone = "Mediterranean",
+                              combine = "None")
   ),
-  
-  Pic_abi = new("PFT",
+
+  Pic_abi = new("Layer",
                 id = "Pic_abi",
                 name = "Picea abies",
-                lifeform = "Tree",
-                leafform = "Needleleaved",
-                phenology = "Evergreen",
-                zone = "Boreal",
                 colour = "darkslateblue",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Needleleaved",
+                                  phenology = "Evergreen",
+                                  zone = "Boreal",
+                                  combine = "None")
   ),
-  
-  Pic_sit = new("PFT",
+
+  Pic_sit = new("Layer",
                 id = "Pic_sit",
                 name = "Picea sitchensis",
-                lifeform = "Tree",
-                leafform = "Needleleaved",
-                phenology = "Evergreen",
-                zone = "Boreal",
                 colour = "black",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Needleleaved",
+                                  phenology = "Evergreen",
+                                  zone = "Boreal",
+                                  combine = "None")
   ),
-  
-  Pin_syl = new("PFT",
+
+  Pin_syl = new("Layer",
                 id = "Pin_syl",
                 name = "Pinus sylvestris",
-                lifeform = "Tree",
-                leafform = "Needleleaved",
-                phenology = "Evergreen",
-                zone = "Boreal",
                 colour = "darkorchid4",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Needleleaved",
+                                  phenology = "Evergreen",
+                                  zone = "Boreal",
+                                  combine = "None")
   ),
-  
-  Pin_hal = new("PFT",
+
+  Pin_hal = new("Layer",
                 id = "Pin_hal",
                 name = "Pinus halepensis",
-                lifeform = "Tree",
-                leafform = "Needleleaved",
-                phenology = "Evergreen",
-                zone = "Mediterranean",
                 colour = "orangered",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Needleleaved",
+                                  phenology = "Evergreen",
+                                  zone = "Mediterranean",
+                                  combine = "None")
   ),
-  
-  Pop_tre = new("PFT",
+
+  Pop_tre = new("Layer",
                 id = "Pop_tre",
                 name = "Populus tremula",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "lightsteelblue3",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  Que_coc = new("PFT",
+
+  Que_coc = new("Layer",
                 id = "Que_coc",
                 name = "Quercus coccifera",
-                lifeform = "Shrub",
-                leafform = "Unspecified_Leafform",
-                phenology = "Evergreen",
-                zone = "Mediterranean",
                 colour = "magenta",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Shrub",
+                                  leafform = "Unspecified_Leafform",
+                                  phenology = "Evergreen",
+                                  zone = "Mediterranean",
+                                  combine = "None")
   ),
-  
-  Que_ile = new("PFT",
+
+  Que_ile = new("Layer",
                 id = "Que_ile",
                 name = "Quercus ilex",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Evergreen",
-                zone = "Mediterranean",
                 colour = "violetred",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Evergreen",
+                                  zone = "Mediterranean",
+                                  combine = "None")
   ),
-  
-  Que_pub = new("PFT",
+
+  Que_pub = new("Layer",
                 id = "Que_pub",
                 name = "Quercus pubescens",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Supra-mediterranean",
                 colour = "springgreen4",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Supra-mediterranean",
+                                  combine = "None")
   ),
-  
-  Que_rob = new("PFT",
+
+  Que_rob = new("Layer",
                 id = "Que_rob",
                 name = "Quercus robur",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "seagreen3",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  Til_cor = new("PFT",
+
+  Til_cor = new("Layer",
                 id = "Til_cor",
                 name = "Tilia cordata",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "limegreen",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  Ulm_gla = new("PFT",
+
+  Ulm_gla = new("Layer",
                 id = "Ulm_gla",
                 name = "Ulmus glabra",
-                lifeform = "Tree",
-                leafform = "Broadleaved",
-                phenology = "Summergreen",
-                zone = "Temperate",
                 colour = "olivedrab",
-                combine = "None"
+                properties = list(type = "PFT",
+                                  lifeform = "Tree",
+                                  leafform = "Broadleaved",
+                                  phenology = "Summergreen",
+                                  zone = "Temperate",
+                                  combine = "None")
   ),
-  
-  C3_gr = new("PFT",
+
+  C3_gr = new("Layer",
               id = "C3_gr",
               name = "C3 herbacious",
-              lifeform = "Grass",
-              leafform = "Unspecified_Leafform",
-              phenology = "GrassPhenology",
-              zone = "Temperate-boreal",
-              colour = "lightgoldenrod1",
-              combine = "None"
+              properties = list(type = "PFT",
+                                lifeform = "Grass",
+                                leafform = "Unspecified_Leafform",
+                                phenology = "GrassPhenology",
+                                zone = "Temperate-boreal",
+                                colour = "lightgoldenrod1",
+                                combine = "None")
   ),
-  
-  C4_gr = new("PFT",
+
+  C4_gr = new("Layer",
               id = "C4_gr",
               name = "C4 herbacious",
-              lifeform = "Grass",
-              leafform = "Unspecified_Leafform",
-              phenology = "GrassPhenology",
-              zone = "Tropical",
               colour = "sienna2",
-              combine = "None"
-  ),
-  
-  Bare = new("PFT",
-             id = "Bare",
-             name = "Bare ground",
-             lifeform = "NA",
-             leafform = "NA",
-             phenology = "NA",
-             zone = "NA",
-             colour = "grey80",
-             combine = "None"
-  ),
-  
-  None = new("PFT",
-             id = "None",
-             name = "Nothing here",
-             lifeform = "NA",
-             leafform = "NA",
-             phenology = "NA",
-             zone = "NA",
-             colour = "grey80",
-             combine = "None"
-  ),
-  
-  Total = new("PFT",
-              id = "Total",
-              name = "Total",
-              lifeform = "NA",
-              leafform = "NA",
-              phenology = "NA",
-              zone = "NA", 
-              colour = "black",
-              combine = "None"
+              properties = list(type = "PFT",
+                                lifeform = "Grass",
+                                leafform = "Unspecified_Leafform",
+                                phenology = "GrassPhenology",
+                                zone = "Tropical",
+                                combine = "None")
   )
 )
 
