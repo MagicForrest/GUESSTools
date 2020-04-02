@@ -16,4 +16,4 @@ Depends:
     DGVMTools
 BugReports: https://github.com/MagicForrest/GUESSTools/issues
 NeedsCompilation: no
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.0
